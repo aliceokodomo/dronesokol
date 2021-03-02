@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>projet_drone</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slideShow.css">
+</head>
+<body>
+  <header>
+    <div class="logo1">
+        <img src="images/logo1.png" alt="logo">
+      </div>
+  <nav>
+
+    <ul>
+      <li><a href="#">Nos produits</a></li>
+      <li><a href="#">Nos services</a></li>
+      <li><a href="#">A propos de nous</a></li>
+      <li><a href="#">Nous contacter</a></li>
+    </ul>
+  </nav>
+</header>
+
+      <!-- Slideshow container -->
+      <section class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/drone1.jpg" alt="drone1" style="width:100%; max-height:600px">
+        <div class="text">Défis écologique</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/drone2.jpg" alt="drone2" style="width:100%; max-height:600px">
+        <div class="text">La conquête du ciel</div>
+
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/drone3.jpg" alt="drone3" style="width:100%; max-height:600px">
+        <div class="text">Technologie de pointe</div>
+      </div>
+
+    </section>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+<section class="card-area">
+<!--CARD-->
+      <h1 class="title">Panorama</h1>
+    <div class="card">
+  	<div class="pic">
+  		<img src="images/drone2.jpg " alt="drone 2 ">
+  	</div>
+  	<div class="description">
+  		<h2>Lorem ipsum</h2>
+  		<span class="location">Lorem, Drone</span>
+  		<p>nice Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe libero placeat illo cum
+  			consequuntur fugit quibusdam eius accusantium, iusto qui. At non ratione impedit excepturi, dignissimos
+  			minus unde facere. </p>
+  		<button id="btn1">Lorem Ipsum Dolor</button>
+  	</div>
+    </div>
+
+  <div class="card">
+  <div class="pic">
+    <img src="images/drone1.jpg " alt="drone 1 ">
+  </div>
+  <div id="black" class="description ">
+    <h2>Lorem ipsum</h2>
+    <span class="location">Lorem, Drone</span>
+    <p>nice Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe libero placeat illo cum
+      consequuntur fugit quibusdam eius accusantium, iusto qui. At non ratione impedit excepturi, dignissimos
+      minus unde facere. </p>
+    <button>Lorem Ipsum Dolor</button>
+  </div>
+  </div>
+
+
+  <div class="card">
+  <div class="pic">
+    <img src="images/drone3.jpg " alt="drone 3 ">
+  </div>
+  <div class="description">
+    <h2>Lorem ipsum</h2>
+    <span class="location">Lorem, Drone</span>
+    <p>nice Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe libero placeat illo cum
+      consequuntur fugit quibusdam eius accusantium, iusto qui. At non ratione impedit excepturi, dignissimos
+      minus unde facere. </p>
+    <button id="btn2">Lorem Ipsum Dolor</button>
+  </div>
+  </div>
+
+  <!--CARD END-->
+</section>
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+    </div>
+    <h3 class="text-form">Nous contacter</h3>
+
+<div class="container-form">
+<form action="">
+<label for="name">Nom</label>
+<input type="text" id="name" name="name" placeholder="Nom..">
+
+<label for="email">email</label>
+<input type="text" id="email" name="email" placeholder="Email..">
+
+<label for="sujet">Sujet</label>
+<textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
+
+<input type="submit" value="Submit">
+</form>
+</div>
+      <footer>
+        <div class="drone">
+              <img src="images/drone4.svg" alt="drone4">
+
+              <a href="https://www.linkedin.com/in/" target="_blank">
+                   <img src="images/logolinkedin.png" class="pictoRS" alt="logo linked in"/>
+                 </a>
+                 <a href="https://www.instagram.com/" target="_blank">
+                   <img src="images/logoinstagram.png" class="pictoRS" alt="logo IG"/>
+                 </a>
+                 <a href="https://github.com/HedyKatherine/MiniProjet_Drone/" target="_blank">
+                   <img src="images/logogithub.png" class="pictoRS" alt="logo git"/>
+                 </a>
+                 <a href="https://www.facebook.com/" target="_blank">
+                   <img src="images/logofacebook.png" class="pictoRS" alt="logo FB"/>
+                 </a>
+      </footer>
+
+</body>
+</html>
